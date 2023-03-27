@@ -37,8 +37,8 @@ def main():
         Y = Y+1
         pic = os.getcwd() + pic
         caption = "testing the work"
-        pwt.sendwhats_image(phonenumber ,pic,caption ,X+1)
         pwt.sendwhatmsg(phonenumber, msg, X,Y)
+        pwt.sendwhats_image(phonenumber ,pic,caption ,X+1)
         
    
 main()
