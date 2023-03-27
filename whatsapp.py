@@ -11,13 +11,13 @@ data1 = np.array(data['Name']).reshape(-1,1).tolist()
 
 data2 = np.array(data['Phonenumber']).reshape(-1,1).tolist()
 data3 = np.array(data['Message']).reshape(-1,1).tolist()
-
+data4 = np.array(data['Picture']).reshape(-1,1).tolist()
  
 # using now() to get current time
 
 current_time = datetime.datetime.now()
  
-# Printing attributes of now()msg = ''
+
 def main():
 
     X=current_time.hour
@@ -28,11 +28,18 @@ def main():
         x = data2.index(phonenumber)
         phonenumber = str(phonenumber)
         msg =data3[x]
+        pic = data4[x]
         for i in msg:
             msg = str(i)
+        for i in pic:
+            pic = i
         X = X
         Y = Y+1
-        pwt.sendwhatmsg(phonenumber, msg ,X,Y)
+        pic = os.getcwd() + pic
+        caption = "testing the work"
+        pwt.sendwhats_image(phonenumber ,pic,caption ,X+1)
+        pwt.sendwhatmsg(phonenumber, msg, X,Y)
+        
    
 main()
 
