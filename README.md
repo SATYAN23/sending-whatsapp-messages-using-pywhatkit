@@ -10,6 +10,6 @@ pip install pyautogui
 
 pip install pandas
 
-run code by
+run code by and place required files on same location 
 
-python em whatsapp.pyw 
+python whatsapp.py
