@@ -1,7 +1,15 @@
 # sending-whatsapp-messages-aumatically-using-pywhatkit
 
-installing required modules
+# open command terminal and install the requirements:
 
-pip install pywhatkit
+pip install python
+
+pip install pygame
+
+pip install pyautogui
 
 pip install pandas
+
+run code by
+
+python em whatsapp.pyw 
