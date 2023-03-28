@@ -1,4 +1,4 @@
-# sending-whatsapp-messages-using-pywhatkit
+# sending-whatsapp-messages-aumatically-using-pywhatkit
 
 installing required modules
 
