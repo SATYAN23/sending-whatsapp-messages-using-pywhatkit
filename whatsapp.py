@@ -24,6 +24,8 @@ def main():
     
     Y=current_time.minute
     
+
+ 
     for phonenumber in data2:
         x = data2.index(phonenumber)
         phonenumber = str(phonenumber)
@@ -36,8 +38,7 @@ def main():
         X = X
         Y = Y+1
         pic = os.getcwd() + pic
-        caption = "testing the work"
-        pwt.sendwhatmsg(phonenumber, msg, X,Y)
+        caption = "please subscribe to my channel link is: https://www.youtube.com/channel/UCRwABdvUtddSbidtpZWMiTQ"
         pwt.sendwhats_image(phonenumber ,pic,caption ,X+1)
         
    
